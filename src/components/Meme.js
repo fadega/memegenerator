@@ -26,7 +26,7 @@ export default function Meme() {
                   placeholder="Bottom text"
               />
               <button className="form--button" onClick={getMemeImage}>
-                  Get a new meme image
+                  Get new meme image
               </button>
               <img src={memeImage} alt="meme" className="meme--image"/>
           </div>
