@@ -43,13 +43,25 @@ main{
   display:grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin:0 auto;
 }
 .form--input{
   font-family: "Roboto", sans-serif;
   text-indent:5px;
   font-size: 1.25rem;
   border: 1px solid #d5d4d8;
+  
+
+}
+.form--inputs{
+  grid-column: 1 / -1;
+  display:grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
 }
 .form--button{
   grid-column: 1 / -1;
@@ -58,11 +70,42 @@ main{
   border: none;
   border-radius: 5px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
+  padding:10px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 .meme--image{
   max-width: 100%;
+  border:1px solid #672280;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  padding:5px;
+  border-radius: 3px;
+}
+.meme--text{
+  position: absolute;
+  min-width: 300px;
+  top: calc(50vh - (100px / 2));
+  left: calc(50vw - (300px / 2));
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px;
+
+
+ 
+}
+.top--text, .bottom--text{
+  background-color:#672280;
+  padding:10px;
+  border-radius: 10px;
+  height: auto;
  
 }
