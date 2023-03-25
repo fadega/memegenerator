@@ -41,6 +41,14 @@ export default function Meme() {
                 randomIamge: memesArray[randomIndex].url
             })
         })
+        const topText = document.querySelector(".top--text").innerHTML;
+        const bottomText = document.querySelector(".bottom--text").innerHTML;
+        if(topText == "" || topText === "") {
+          document.querySelector(".top--text").style.display = "none";
+        }
+        if(bottomText == null || bottomText == "") {
+          document.querySelector(".bottom--text").style.display = "none";
+        }
     }
     return (
       <main className="meme">
