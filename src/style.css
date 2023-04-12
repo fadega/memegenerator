@@ -103,6 +103,7 @@ main{
  
 }
 .top--text, .bottom--text{
+  display: none;
   background-color:#672280;
   padding:10px;
   border-radius: 10px;

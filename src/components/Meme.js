@@ -43,11 +43,16 @@ export default function Meme() {
         })
         const topText = document.querySelector(".top--text").innerHTML;
         const bottomText = document.querySelector(".bottom--text").innerHTML;
-        if(topText == "" || topText === "") {
-          document.querySelector(".top--text").style.display = "none";
+        console.log(` Top text: ${topText} Bottom text: ${bottomText}`)
+        if(topText != null || topText != "") {
+          document.querySelector(".top--text").style.display = "block"
+        }else {
+          document.querySelector(".top--text").style.display = "none !important"
         }
-        if(bottomText == null || bottomText == "") {
-          document.querySelector(".bottom--text").style.display = "none";
+        if(bottomText != null || bottomText != "") {
+          document.querySelector(".bottom--text").style.display = "block"
+        }else {
+          document.querySelector(".bottom--text").style.display = "none !important"
         }
     }
     return (
